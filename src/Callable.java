@@ -1,5 +1,5 @@
-public interface Callable {
+public interface Callable <T> {
 
 
-     void receiveCall();
+     <T> void receiveCall(T name);
 }

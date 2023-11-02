@@ -1,8 +1,5 @@
 public class ApplePhone extends Phone {
 
-    public ApplePhone (String name){
-        super(name);
-    }
 
     public ApplePhone(String number, String model, String weight) {
         super(number, model, weight);
@@ -15,7 +12,7 @@ public class ApplePhone extends Phone {
 
 
     @Override
-    public void receiveCall() {
-        System.out.printf("Звонит: %s \n", this.getName());
+    public void receiveCall(Object name) {
+        System.out.println("Вам звонит: "+ name);
     }
 }

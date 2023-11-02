@@ -26,9 +26,6 @@ public abstract class Phone implements Callable, Informable{
         this.number=number;
         this.model=model;
     }
-    public Phone(String name){
-        this.name=name;
-    }
 
     public Phone(String number, String model, String weight) {
         this.number = number;

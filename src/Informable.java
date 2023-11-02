@@ -1,5 +1,5 @@
-public interface Informable {
-    default void infoo(){
+public interface Informable<T>{
+    default <T>void infoo(){
         System.out.println("Default info");
     }
 }
